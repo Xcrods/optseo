@@ -1,0 +1,17 @@
+import { Button } from "/components/ui/button"
+
+export default function Onboarding() {
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md text-center">
+        <h2 className="text-2xl font-bold mb-4">Welcome to ComUnity</h2>
+        <p className="text-gray-600 mb-6">
+          ComUnity is a community engagement app that allows you to connect with various communities, stay informed about events, and access resources.
+        </p>
+        <Button onClick={() => alert('Proceeding to Dashboard...')} className="w-full">
+          Get Started
+        </Button>
+      </div>
+    </div>
+  )
+}
